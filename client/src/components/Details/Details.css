@@ -1,0 +1,102 @@
+.image{
+    width: 450px;
+    height: auto;
+    border-color: black;
+    border-radius: 10%;
+}
+.h3_details{
+    margin-top: 10%;
+    font-size: 27px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    text-align: center;
+    
+}
+.recaja{
+    justify-content: center;
+    background-image:url(./virtual_reality.jpg);
+    background-size: cover;
+    text-align: center;
+    
+    display:grid;
+}
+/* .caja{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+} */
+.p{
+    width: 40   0px;
+    height: 20px;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px;
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+
+    justify-content: center;
+    align-content: center;
+
+   
+}
+.conteinDesc{
+    width: 400px;
+    height: 200px;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow:auto;
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.conteinDesc::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.conteinDesc {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.backDetails{
+   
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:#000000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+    /* background: #309af7; */
+    background: linear-gradient(#3f34a3, #ffebeb, #320b9e);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 60px;
+}
+.backDetails:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 010px #2196f3, 0 0 10px #2196f3,0 0 40px #2196f3,0 0 60px #2196f3,0 0 80px #2196f3,0 0 100px #2196f3;
+    transition-delay:1s;
+    transition: 0.5ms;
+}
