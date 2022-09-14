@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export function setLoadig(){
+export function setLoading(){
     return{
         type: "SET_LOADING"
     }
@@ -8,7 +8,7 @@ export function setLoadig(){
 
 export function getGames(){
     return async function(dispatch){
-        dispatch(setLoadig())
+        dispatch(setLoading())
         var result= await axios.get('http://localhost:3001/videogames', [])
 
         return dispatch({
