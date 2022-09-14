@@ -4,7 +4,6 @@ import { useHistory } from 'react-router';
 import { resetDetails } from '../../action';
 import './Details.css';
 
-
 export default function Details() {
     
     const dispatch = useDispatch()
@@ -18,8 +17,6 @@ export default function Details() {
         dispatch(resetDetails())
         history.push('/home')
     }
-    // console.log(props, '------------------ console log de props')
-
         return (
             <div >{
                 resp && resp.platforms && resp.genres ? (
@@ -44,14 +41,8 @@ export default function Details() {
                              <p className="p">Platforms: {resp.platforms !== undefined ?resp.platforms.map(p => p.split(" ").join(" - ")): "empty"}</p> :
                             <p className="p">Platforms: {resp.platforms !== undefined ?resp.platforms.map(p => p.name + (" - ")): "empty"}</p>
                         }
-                   
                     </div>
                     ) : <h1>cargando....</h1>
-            
-                
             }</div>
         )
-
-
-
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getGames, getGenres } from '../../action'
-import {useState, useEffect} from 'react'
+//import { getGames, getGenres } from '../../action'
+import { getGames} from '../../action'
+//import {useState, useEffect} from 'react'
+import {useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import axios from 'axios'
 import Styles from './Create.module.css'
@@ -94,7 +96,7 @@ export default function Create() {
     return (
         <div className={Styles.caja}>
             {
-                !created ?(
+                !created?(
                 <div > 
                     <h1 className={Styles.titlecre}>CREATE YOUR GAME</h1>
                     <Link to={'/home'}>
@@ -191,10 +193,8 @@ export default function Create() {
             ) : (
                 <div className={Styles.alerthome}>
                 <div className={Styles.alert}>
-                    <p >
-                    Your Video Game has been created succesfull!!!
-                    </p>
-                    <button onClick={(e) => handleAcept(e)}> Accept</button>
+                    <p >Video Game has been created</p>
+                    <button onClick={(e) => handleAcept(e)}>ACCEPT</button>
                 </div>
                 </div>
             )

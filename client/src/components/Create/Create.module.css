@@ -91,33 +91,29 @@
 }
 
 .alert{
-    width: 180px;
-    height: 80px;
+    width: 280px;
+    height: 180px;
     justify-content: center;
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
-    background-color: rgba(112, 7, 133, 0.645);
+    background-color: rgba(11, 7, 133, 0.7);
     margin-top: 22%;
     border-radius: 15px;
     color: white;
 }
 
 .alert p{
-    font-size: 9px;
+    font-size: 20px;
     text-align: center;
 }
 
 .alert button{
-    border-radius: 5px;
-    font-size: 12px;
-
-    text-transform: uppercase;
+    font-size: 20px;
     letter-spacing: 4px;
-    overflow: hidden;
     transition: 0.2s;
     background: linear-gradient(#9b0202, #ffebeb, #ee3d3d);
-    border: solid 1px rgb(255, 255, 255);
+    
 }
 .alert button:hover{
     color: #ffffff;
