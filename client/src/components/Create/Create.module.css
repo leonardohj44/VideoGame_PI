@@ -113,8 +113,8 @@
     letter-spacing: 4px;
     transition: 0.2s;
     background: linear-gradient(#9b0202, #ffebeb, #ee3d3d);
-    
 }
+
 .alert button:hover{
     color: #ffffff;
     background: #d01500;
