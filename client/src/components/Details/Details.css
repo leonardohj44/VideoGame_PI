@@ -1,69 +1,53 @@
 .image{
-    width: 450px;
+    width: 750px;
     height: auto;
     border-color: black;
-    border-radius: 10%;
+    border-radius: 5%;
+    padding-bottom: 20px;
 }
 .h3_details{
     margin-top: 10%;
-    font-size: 27px;
+    font-size: 30px;
     color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     text-align: center;
-    
 }
+
 .recaja{
     justify-content: center;
-    background-image:url(./virtual_reality.jpg);
+    background-image:url(./bg.gif);
     background-size: cover;
     text-align: center;
-    
     display:grid;
 }
-/* .caja{
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-} */
+
 .p{
-    width: 40   0px;
+    width: 40 0px;
     height: 20px;
     font-family: sans-serif; 
     color: #ffffff; 
     font-size: 18px; 
     font-weight: 400; 
     text-align: center; 
-    background: #889ccf; 
+    background: blue; 
     margin: 0 0 25px;
     padding: 20px; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
     border: 2px solid #5878ca;
-
     justify-content: center;
     align-content: center;
-
-   
 }
 .conteinDesc{
-    width: 400px;
-    height: 200px;
+    width: 710px;
+    height: 300px;
     font-family: sans-serif; 
     color: #ffffff; 
-    font-size: 14px; 
+    font-size: 20px; 
     font-weight: 400; 
     text-align: center; 
-    background: #889ccf; 
+    background: blue; 
     margin: 0 0 25px; 
     overflow:auto;
     padding: 20px; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
     border: 2px solid #5878ca;
-
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -78,7 +62,6 @@
 }
 
 .backDetails{
-   
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -87,7 +70,6 @@
     letter-spacing: 4px;
     overflow: hidden;
     transition: 0.2s;
-    /* background: #309af7; */
     background: linear-gradient(#3f34a3, #ffebeb, #320b9e);
     border: solid 1px rgb(255, 255, 255);
     border-radius: 60px;
