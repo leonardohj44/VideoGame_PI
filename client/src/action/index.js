@@ -1,16 +1,4 @@
-import axios from 'axios'
-
-//acciones a realizar:
-//loading
-//get por Games
-//filtro por genero
-//orden alfabetico
-//buscar por rating
-//get por nombre
-//get al detalle de el juego clickeado
-//get de genres
-//post de game
-//get game creado
+import axios from 'axios';
 
 export function setLoadig(){
     return{
@@ -55,7 +43,6 @@ export function getDetail(id){
             })
         } catch (e){
             alert('Game not found')
-         //  console.log('Game not found')
         }
     }
 }

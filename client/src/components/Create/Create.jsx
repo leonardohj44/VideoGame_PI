@@ -79,12 +79,9 @@ export default function Create() {
         e.preventDefault()
         axios.post('http://localhost:3001/videogame', form)
         .then( r => {
-
             dispatch(getGames())
-            // alert("The Game is created")
             setForm({});
             setCreated(true);
-            
         }).catch(e => {
             console.log(e)
         })
@@ -94,7 +91,6 @@ export default function Create() {
         e.preventDefault()
         history.push('/home')
     }
- //  console.log(form, "----------- console form")
     return (
         <div className={Styles.caja}>
             {
@@ -165,17 +161,14 @@ export default function Create() {
                                 }
                             </select>
                             </label>
-                                
                             <label  className={Styles.label}>Platforms: 
                                 <select className={Styles.input} onChange={(e) => handlePlatforms(e)} name="platforms" id="platforms"  required>
                                     <option name="platforms" value=""> - - - - - - - </option>
                                     {
                                         allPlatforms.map( p => (
                                             <option value={p}>{p}</option>
-                                            
                                             ))
                                         }
-                                  
                                 </select>
                             </label>
                                 {error.platforms &&(

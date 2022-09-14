@@ -46,7 +46,6 @@
       50%{background-position:100% 69%}
       100%{background-position:0% 32%}
   }
-/* fin animacion fondo navbar*/
 
 /*------- create ------*/
 .txtCreate {
@@ -74,8 +73,6 @@
 /*----------fin create button----------*/
 .filtros{
   display: flex;
-  /* padding-left: 10%; */
-  /* grid-template-columns:auto; */
   bottom: 0;
   justify-content: center;
   align-items: center;

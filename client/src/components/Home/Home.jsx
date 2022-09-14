@@ -15,16 +15,12 @@ export default function Home() {
     const data = useSelector((state) => state.data)
     const[currentPage, setCurrentPage] = useState(1)
     const toGenres = useSelector((state) => state.stateGenres)
-    
 
-  //  console.log(toGenres, '----------algenres')
-    
     useEffect(() => {
         dispatch(getGames())
         dispatch(getGenres())
     }, [dispatch])
 
-    // selecciona por creados, no creados y all
     let result = allG
     if(data === "Created"){
         result = allG.filter( e => typeof(e.id) === "string")
@@ -36,14 +32,9 @@ export default function Home() {
 
     //--------------- paginado ------------------\\
     
-    
-  //  console.log(currentPage, ' ---------- current page')
-    const[xPage] = useState(15)                  //---------------cantidad de games x pagina
-  //  console.log(xPage, '----------------- xpage')
+    const[xPage] = useState(15)                  //nro. games x pagina
     const indexLast = currentPage * xPage
- //   console.log(indexLast, '--------------index last')
     const indexFirst = indexLast - xPage
- //   console.log(indexFirst, '------------ index first')
 
     var currentGame = result.slice(indexFirst, indexLast)
     const paginate = (pageNumber) =>{setCurrentPage(pageNumber)}
@@ -58,31 +49,26 @@ export default function Home() {
         previus = currentPage - 1
     }
 
-//    console.log(allpages, '------------- console log allpages')
 function handleHome(e){
     e.preventDefault()
     dispatch(getGames(e.target.value))
     setCurrentPage(1)
 }
-// -------------------- filtrados ----------------------------\\
+// -------------------- filtrados ----------------------------
 function handleFilterGenre(e){
     e.preventDefault()
     dispatch(filterGenre(e.target.value))
-  //  console.log(e.target.value, '------------value en home')
-  setCurrentPage(1)
+    setCurrentPage(1)
 }
 
 function handleFilterCreate(e){
     e.preventDefault()
     dispatch(selectData(e.target.value))
-  //  console.log(e.target.value, '------------- target value')
-//   dispatch(getGames())
 }
 
 function handleSort(e){
     e.preventDefault()
     dispatch(sort_AZ_ZA(e.target.value))
-    
 }
 
 function handleRating(e){

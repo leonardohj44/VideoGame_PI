@@ -63,7 +63,7 @@ function rootReducer(state = initialState, action){ // action={type,payload}
                 return {...g, genres: g.genres.map( e => e.name)}
             })
             const filtro = action.payload === 'All' ? TotalGames : maping.filter( e => {
-                return e.genres.includes(action.payload) // hago el filtro por cada genero que se elija en la opcion del select
+                return e.genres.includes(action.payload) // filtro x  c/genero
             })
             return {
                 ...state,
